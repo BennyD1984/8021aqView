@@ -23,7 +23,7 @@ You can create several different SPB networks in ”spbnetworks.py”, but only 
 
 ![Example of the script](/images/screenshot3.png)
 
-Start “8021awView-v1.py” and try the different options in the main menu, and change your SPB networks i.e. link metric, BVLANs, BridgeID etc. to see how it behaves. After every change in “spbnetworks.py”, the script needs to be restarted to take the changes into account. Don´t forget to save your changes in “spbnetworks.py”.
+Start “8021aqView-v1.py” and try the different options in the main menu, and change your SPB networks i.e. link metric, BVLANs, BridgeID etc. to see how it behaves. After every change in “spbnetworks.py”, the script needs to be restarted to take the modifications into account. Don´t forget to save your changes in “spbnetworks.py”.
 You can also set the “SystemState” in the dictionary to “off”. This will compute the SPB network as if the node would be physically down.
 If your network contains a faulty configuration like duplicated BridgeID, ISID/BVLAN mismatch, unidirectional links etc., an exception will stop the start of the script and tell you what needs to be fixed.
 
