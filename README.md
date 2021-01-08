@@ -32,7 +32,7 @@ You can also add additional “random” ISIDs/BVLANs by modifying the dictionar
 ![Example of the script](/images/screenshot4.png)
 
 Be patient, if you add a lot of tandem ISID´s. Depending on your system, it can take a remarkable time to compute them and populate the multicast table. 
-Even if the standard 802.1aq offers only 16 ECT values, to tool makes an experimental use of all 255 possible ECT-masks – to analyze maximal theoretical path diversity.
+Even if the standard 802.1aq offers only 16 ECT values, to tool makes an experimental use of all 256 possible ECT-masks – to analyze maximal theoretical path diversity.
 
 Please get in touch with me, if you have any questions or enhancement requests.
 
