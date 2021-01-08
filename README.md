@@ -8,9 +8,13 @@ The tool is based on the files “8021aqView-v1.py” and “spbnetworks.py”, 
 
 You can create your own networks, based on those examples. Just create your nodes like in the given examples and adapt name, Bridge ID, Links and ISID´s.
 The format for the key “Links” is:
+
 [[“Name of adjacent Node”, “Metric”]]
+
 The format for the key “ISID” is:
+
 [[“ISID#”, “BVLAN”, “Multicast transmit bit”, “Multicast receive bit”]]
+
 Hence, if you would like your ISID to participate in multicast tandem S,G mode, you need to put both bits to 1. For multicast headend replication, put the bits to 0.
 
 ![Example of the script](/images/screenshot2.png)
