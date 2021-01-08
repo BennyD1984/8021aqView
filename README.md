@@ -20,13 +20,11 @@ Hence, if you would like your ISID to participate in multicast tandem S,G mode, 
 ![Example of the script](/images/screenshot2.png)
 
 You can create several different SPB networks in ”spbnetworks.py”, but only one is imported by “8021aqView-v1.py” and computed for further analysis. The network/dictionary you import, can be changed under in the bottom line of “spbnetworks.py”. Just uncomment the network you want to load:
-
 ![Example of the script](/images/screenshot3.png)
-
 Start “8021awView-v1.py” and try the different options in the main menu, and change your SPB networks i.e. link metric, BVLANs, BridgeID etc. to see how it behaves. After every change in “spbnetworks.py”, the script needs to be restarted to take the changes into account. Don´t forget to save your changes in “spbnetworks.py”.
 You can also set the “SystemState” in the dictionary to “off”. This will compute the SPB network as if the node would be physically down.
 If your network contains a faulty configuration like duplicated BridgeID, ISID/BVLAN mismatch, unidirectional links etc., an exception will stop the start of the script and tell you what needs to be fixed.
-You can also add additional “random” ISID`s/BVLAN`s by modifying the dictionary in the “8021aqView-v1.py”. This way, you can i.e. check how your computation time and multicast tables are impacted. Just uncomment the lines as needed, another 1.000 ISID`s (500 in headend mode and 500 in tandem mode) spread over 256 BVLAN`s are added in the example below.
+You can also add additional “random” ISIDs/BVLANs by modifying the dictionary in the “8021aqView-v1.py”. This way, you can i.e. check how your computation time and multicast tables are impacted. Just uncomment the lines as needed, another 1.000 ISIDs (500 in headend mode and 500 in tandem mode) spread over 256 BVLANs are added in the example below.
 
 ![Example of the script](/images/screenshot4.png)
 
