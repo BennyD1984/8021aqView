@@ -1410,8 +1410,8 @@ dict_node_dc_interconnect_4dc = {
 # Enter used dictionary here
 # --------------------------
 # d_node = dict_node_square
-# d_node = dict_node_diamond
+d_node = dict_node_diamond
 # d_node = dict_node_ss_one
 # d_node = dict_node_dc_interconnect
-d_node = dict_node_dc_interconnect_4dc
+# d_node = dict_node_dc_interconnect_4dc
 # --------------------------
