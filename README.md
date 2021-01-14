@@ -4,7 +4,7 @@ multicast states, computation time and much more.
 
 ![Example of the script](/images/screenshot1.png)
 
-The tool is based on the files “8021aqView-v1.py” and “spbnetworks.py”, that needs to be placed in the same folder. In the second mentioned file, you can find three example networks – a super spine, the diamond used in RFC 6329 and a simple square topology. You can find the drawings in the folder "images".
+The tool is based on the files “8021aqView-v1.py” and “spbnetworks.py”, that needs to be placed in the same folder. In the second mentioned file, you can find five example networks – a simple square, the diamond used in RFC 6329, a super spine, a super spine with datacenter interconnection and a datacenter interconnection with 80 nodes in total. You can find the drawings in the folder "images".
 
 You can create your own networks, based on those examples. Just create your nodes like in the given examples and adapt name, Bridge ID, Links and ISID´s.
 The format for the key “Links” is:
