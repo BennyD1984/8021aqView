@@ -2,7 +2,7 @@
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
 # ===================================================
-# 8021aqView_v1.0 - created by Benjamin Domröse in 2021.
+# 8021aqView_v1.0 - created by Benjamin Domroese in 2021.
 #
 # Improvements planned: SPSource ID Name display in MCast.
 #
