@@ -34,6 +34,16 @@ You can also add additional “random” ISIDs/BVLANs by modifying the dictionar
 Be patient, if you add a lot of tandem ISID´s. Depending on your system, it can take a remarkable time to compute them and populate the multicast table. 
 Even if the standard 802.1aq offers only 16 ECT values, to tool makes an experimental use of all 256 possible ECT-masks – to analyze maximal theoretical path diversity.
 
+8021aqGraphView
+
+Graphical version created based on networkx and matplotlib, to visualize usage of edges filtered or unfiltered by source/destination, ISID, BVLAN.
+
+![Example of the script](/images/8021aqGraphViewSCREENSHOT.JPG)
+
+Nodes should be positioned in the drawing, under "dict_node_position" - like in attached screenshot. 
+
+![Example of the script](/images/8021aqGraphViewSCREENSHOT_nodepos.JPG)
+
 Please get in touch with me, if you have any questions or enhancement requests.
 
 
