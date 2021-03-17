@@ -1043,13 +1043,14 @@ low_bvl_to_test! Specify value between 4000 and 4256"
 max_bvl_to_test and low_bvl_to_test! BVLAN " + str(i) + " is used, bot not \
 in that range!"
 
-    # GraphView_v1_1 and View_v5 plausibility check, that no node has duplicate ISID´s.
+    # GraphView_v1_1 and View_v5 plausibility check, that no node
+    # has duplicate ISIDs.
     for k in d_node:
         for x in range(len(d_node[k]["ISID"])):
             dup_counter = 0
             for y in range(len(d_node[k]["ISID"])):
                 if d_node[k]["ISID"][x][0] == d_node[k]["ISID"][y][0]:
-                    dup_counter +=1
+                    dup_counter += 1
                 assert dup_counter <= 1, "Error, Node {} has ISID {} configured \
 multiple times!".format(k, d_node[k]["ISID"][x][0])
           
