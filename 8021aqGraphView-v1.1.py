@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 # ===================================================
 # 8021aqGraphView_v1.0 - created by Benjamin Domroese in 2021.
-# GraphView 1.0 created
+# GraphView 1.0 created.
+# GraphView 1.1 - added plausibility check for duplicate ISIDs on one node.
 
 
 import math
@@ -1042,6 +1043,16 @@ low_bvl_to_test! Specify value between 4000 and 4256"
 max_bvl_to_test and low_bvl_to_test! BVLAN " + str(i) + " is used, bot not \
 in that range!"
 
+    # GraphView_v1_1 and View_v5 plausibility check, that no node has duplicate ISID´s.
+    for k in d_node:
+        for x in range(len(d_node[k]["ISID"])):
+            dup_counter = 0
+            for y in range(len(d_node[k]["ISID"])):
+                if d_node[k]["ISID"][x][0] == d_node[k]["ISID"][y][0]:
+                    dup_counter +=1
+                assert dup_counter <= 1, "Error, Node {} has ISID {} configured \
+multiple times!".format(k, d_node[k]["ISID"][x][0])
+          
     # Create Graph and add all edges to d_edges, d_edges_isid,
     # and d_edges_weight.
     graph = Graph()
