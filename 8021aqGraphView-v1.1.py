@@ -661,7 +661,7 @@ computations.\n")
     print("APSP would need {} ECT computations (XOR comparisations) ".format(
         apsp_ect_counter))
     # v2_0: Print d_tiebreaker_byte.
-    print("\nTiebreaker statistics (position of SystemID it was found): ")
+    print("\nTiebreaker statistics (position of BridgeID it was found): ")
     print("Info: This is calculated for all BVLANs in range {} to {} \
 (not only used BVLANs)!\n".format(low_bvl_to_test, max_bvl_to_test - 1))
     for k in d_tiebreaker_byte:
