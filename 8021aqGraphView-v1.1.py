@@ -644,10 +644,10 @@ def menu24():
 @decorator_cls_and_return_mainmenu
 def menu30():
     apsp_ect_counter = 0
-    print("Info: Every byte of SystemID that needs to be compared, \
+    print("Info: Every byte of BridgeID that needs to be compared, \
 will increment the value (i.e. one ECT decision with tiebreaker in 8 byte is \
 counted as 8!")
-    print("Tip : An earlier tiebreaker in SystemID will reduce the number of \
+    print("Tip : An earlier tiebreaker in BridgeID will reduce the number of \
 computations.\n")
     for k in d_node:
         print("Node {:>{width}} performed {:>4d} ECT computations \
